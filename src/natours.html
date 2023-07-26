@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 p-0 box-border after:box-border text-[62.5%] md:text-[50%] lg
+lg:text-[56.25%] xl:text-[75%]">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap'); 
+    </style>
+    <link rel="stylesheet" href="icon-font.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body class="font-sans font-normal text-[1.6rem] leading-7 text-[#777] p-12 md:p-0">
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox hidden peer" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button cursor-pointer group bg-white h-28 w-28 fixed top-24 right-24 rounded-full z-[1000] shadow-md text-center md:top-16 md:right-16">
+                <span class="navigation__icon mt-14 w-12 h-[2px] bg-[#333] inline-block before:w-12 before:h-[2px] before:bg-[#333] before:inline-block after:w-12 after:h-[2px] after:bg-[#333] after:inline-block relative before:absolute after:absolute before:left-0 after:left-0 before:-top-3 after:top-3 group-hover:before:-top-4 group-hover:after:top-4 before:duration-200 after:duration-200">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background h-24 w-24 rounded-full fixed top-[6.5rem] right-[6.5rem] z-50 peer-checked:scale-[80] duration-700 md:top-[4.5rem] md:right-[4.5rem]">&nbsp;</div>
+
+            <nav class="navigation__nav h-screen w-0 opacity-0 fixed top-0 left-0 z-[100] duration-700">
+                <ul class="navigation__list absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full ">
+                    <li class="navigation__item"><a href="" class="navigation__link"><span class="mr-6 inline-block">01</span> About Natours</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link"><span class="mr-6 inline-block">02</span> Your Benefits</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link"><span class="mr-6 inline-block">03</span> Popular Tours</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link"><span class="mr-6 inline-block">04</span> Stories</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link"><span class="mr-6 inline-block">05</span> Book Now</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <header class="header h-[95vh] relative">
+            <div class="header__logo-box absolute top-[4rem] left-[4rem]">
+                <img src="../img/logo-white.png" alt="logo" class="header__logo h-[3.5rem]">
+            </div>
+
+            <div class="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="heading mb-[6rem]">
+                    <span class="uppercase text- block text-[6rem] font-normal tracking-[3.5rem] pb-[5rem] text-white heading--primary sm:tracking-[1rem] sm:text-[5rem]">Outdoors</span>
+                    <span class="uppercase text-gray-100 block text-[2rem] font-semibold tracking-[1.75rem] heading--sub sm:tracking-[.5rem]">Is where life happens</span>
+                </h1>
+
+                <a href="" class="btn relative btn-white bg-white text-[#777] uppercase py-[2rem] px-[4rem] tracking-[0.7rem] duration-200 hover:shadow-lg shadow-xl btn--ping btn--animated">
+                    Discover our tours
+                </a>
+            </div>
+            
+        </header>
+
+        <main>
+            <section class="section-about bg-gray-light-1 py-96 -mt-[20vh]">
+                <div class="text-center mb-32">
+                    <h2 class="heading-secondary heading-secondary-design">
+                        Exciting tours for adventurous People
+                    </h2>
+                </div>
+
+                <div class="flex space-x-24 mb-32 max-w-full md:flex-col md:space-x-0 md:space-y-28 md:justify-center md:items-center">
+                    <div class="w-1/2 ml-60 pr-24">
+                        <h3 class="font-semibold mb-10">YOU'RE GOING TO FALL IN LOVE WITH NATURE</h3>
+                        <p class="mb-10 text-justify max-w-4xl leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+
+                        <h3 class="font-semibold mb-10">LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE</h3>
+                        <p class="mb-14 text-justify max-w-4xl leading-loose ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.
+                        </p>
+
+                        <a href="#" class="text-color-primary hover:text-white hover:bg-color-primary px-1 py-3 duration-100 hover:shadow-lg transition-all inline-block hover:-translate-y-2 border-b-[1px] border-color-primary">Learn More →</a>
+                    </div>
+                    <div class="w-1/2 justify-end ">
+                        <div class="composition relative translate-x-10 md:translate-x-32">
+                            <img src="/img/nat-1-large.jpg " alt="" class="composition__photo composition__photo--p1 -translate-x-1/3 -translate-y-3/4">
+                            <img src="/img/nat-2-large.jpg" alt="" class="composition__photo composition__photo--p2 translate-x-1/2 -translate-y-1/2">
+                            <img src="/img/nat-3-large.jpg" alt="" class="composition__photo composition__photo--p3 ">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="features p-64 -skew-y-6 -mt-32 text-center">
+                <div class="flex space-x-20 skew-y-6 md:flex-col md:space-x-0 md:space-y-20 lg:flex-col lg:space-x-0 lg:space-y-20">
+                    <div class="box">
+                        <i class="icon icon-basic-world"></i>
+                        <h3 class="box-header">Explore the world</h3>
+                        <p class="box-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="icon icon-basic-compass"></i>
+                        <h3 class="box-header">Meet Nature</h3>
+                        <p class="box-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur</p>
+                    </div>
+
+                    <div class="box">
+                        <i class="icon icon-basic-map"></i>
+                        <h3 class="box-header">Find Your Way</h3>
+                        <p class="box-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur </p>
+                    </div>
+
+                    <div class="box">
+                        <i class="icon icon-basic-heart"></i>
+                        <h3 class="box-header">Live a Healthier Life</h3>
+                        <p class="box-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tours p-64  bg-gray-light-1" id="section-tours">
+                <div class="text-center mb-32">
+                    <h2 class="heading-secondary heading-secondary-design">
+                        Most Popular tours
+                    </h2>
+                </div>
+
+                <div class="flex space-x-20 max-w-full justify-center items-center md:flex-col md:space-x-0 md:space-y-20">
+
+                    <div class="w-1/3 card ">
+                        <div class="card_side card_side--front">
+                            <div class="card__pic card__pic--1">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--1 card__heading-span">The sea explorer</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul class="card-list">
+                                    <li class="list-item">3 day tours</li>
+                                    <li class="list-item">Upto 30 people</li>
+                                    <li class="list-item">2 tour guides</li>
+                                    <li class="list-item">Sleep in cozy hotels</li>
+                                    <li class="list-item border-b-white">Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card_side card_side--back bg-gradient-to-br from-color-primary-light to-color-primary-dark">
+                            <div class="flex flex-col mt-[40%] space-y-40 justify-center items-center">
+                                <div class="flex flex-col items-center justify-center space-y-12 text-white">
+                                    <p>ONLY</p>
+                                    <h1 class="font-extralight text-8xl">$297</h1>
+                                </div>
+                                <a href="#popup" class=" btn relative btn-white bg-white text-[#777] uppercase py-[2rem] px-[4rem] duration-200 hover:shadow-lg shadow-xl btn--ping ">Book Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/3 card">
+                        <div class="card_side card_side--front ">
+                            <div class="card__pic card__pic--2">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--2 card__heading-span ">The forest Hiker</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul class="card-list">
+                                    <li class="list-item">3 day tours</li>
+                                    <li class="list-item">Upto 30 people</li>
+                                    <li class="list-item">2 tour guides</li>
+                                    <li class="list-item">Sleep in cozy hotels</li>
+                                    <li class="list-item  border-b-white">Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card_side card_side--back bg-gradient-to-br from-color-secondary-light to-color-secondary-dark">
+                            <div class="flex flex-col mt-[40%] space-y-40 justify-center items-center">
+                                <div class="flex flex-col items-center justify-center space-y-12 text-white">
+                                    <p>ONLY</p>
+                                    <h1 class="font-extralight text-8xl">$497</h1>
+                                </div>
+                                <a href="#popup" class=" btn relative btn-white bg-white text-[#777] uppercase py-[2rem] px-[4rem] duration-200 hover:shadow-lg shadow-xl btn--ping ">Book Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/3 card">
+                        <div class="card_side card_side--front ">
+                            <div class="card__pic card__pic--3">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--3 card__heading-span">The snow adventurer</span>   
+                            </h4>
+                            <div class="card__details">
+                                <ul class="card-list">
+                                    <li class="list-item">3 day tours</li>
+                                    <li class="list-item">Upto 30 people</li>
+                                    <li class="list-item">2 tour guides</li>
+                                    <li class="list-item">Sleep in cozy hotels</li>
+                                    <li class="list-item  border-b-white">Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card_side card_side--back bg-gradient-to-br from-color-tertiary-light to-color-tertiary-dark">
+                            <div class="flex flex-col mt-[40%] space-y-40 justify-center items-center">
+                                <div class="flex flex-col items-center justify-center space-y-12 text-white">
+                                    <p>ONLY</p>
+                                    <h1 class="font-extralight text-8xl">$897</h1>
+                                </div>
+                                <a href="#popup" class=" btn relative btn-white bg-white text-[#777] uppercase py-[2rem] px-[4rem] duration-200 hover:shadow-lg shadow-xl btn--ping ">Book Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <a href="#" class="btn relative btn-white bg-color-primary text-white uppercase py-[2rem] px-[4rem] duration-200 hover:shadow-lg shadow-xl btn--ping after:bg-color-primary mx-auto left-[50%] my-12 -translate-x-[50%]">Discover All Tours</a>
+
+
+            </section>
+
+            <section id="stories" class="py-60 bg-gray-100 bg-opacity-90 relative">
+
+                <div class="bg__video">
+                    <video class="bg__video-content" autoplay muted loop>
+                        <source src="../img/video.mp4" type="video/mp4">
+                        <source src="../img/video.webm" type="video/webm">
+                    </video>
+                </div>
+
+
+                <div class="text-center mb-32">
+                    <h2 class="heading-secondary heading-secondary-design">
+                       We Make People genuinely happy
+                    </h2>
+                </div>
+
+                <div class="flex justify-center items-center flex-col space-y-40 py-8">
+                    <div class="review-box group">
+                        <figure class="story__shape">
+                            <img src="../img/nat-8.jpg" class="story__img " alt="">
+                            <figcaption class="story__caption uppercase">Mary Smith</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="font-semibold uppercase mb-6 skew-x-[12deg]">I had the best week ever with my family</h3>
+                            <p class=" leading-loose skew-x-[12deg]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.  Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                        </div>
+                    </div>
+                    <div class="review-box group">
+                        <figure class="story__shape">
+                            <img src="../img/nat-9.jpg" class=" story__img" alt="">
+                            <figcaption class="story__caption uppercase">Jack wilson</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="font-semibold uppercase mb-6 skew-x-[12deg]">WOW! My life is completely different now</h3>
+                            <p class=" leading-loose skew-x-[12deg]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-color-primary hover:text-white hover:bg-color-primary px-1 py-3 duration-100 hover:shadow-lg transition-all inline-block hover:-translate-y-2 border-b-[1px] border-color-primary">Read all stories →</a>
+                </div>
+            </section>
+
+            <section class="booking">
+                <div class="flex justify-center items-center">
+                    <div class="book-box">
+                       <div class="book-form">
+                            <form action="#" class="form last:mb-0">
+
+                                <div class=" mb-20">
+                                    <h2 class="heading-secondary heading-secondary-design">
+                                        Start Booking Now
+                                    </h2>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="text" class="form__input peer " placeholder="Full Name" id="name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" class="form__input peer " placeholder="Email Address" id="email" required>
+                                    <label for="email" class="form__label">Email Address</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="form__radio">
+                                        <input type="radio" class="form__radio-input hidden" id="small" name="size">
+                                        <label for="small" class="form__radio-label group">
+                                            <span class="form__radio-button"></span>
+                                            Small tour group
+                                        </label>
+                                    </div>
+
+                                    <div class="form__radio">
+                                        <input type="radio" class="form__radio-input hidden" id="large" name="size">
+                                        <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Large tour group
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <button class="btn relative btn-white bg-color-primary text-white uppercase py-6 px-16 duration-200 hover:shadow-lg shadow-xl btn--ping after:bg-color-primary mt-8">Next Step &rarr;</button>
+                                </div>
+                            </form>
+                       </div>
+                    </div>
+                </div>
+            </section>
+
+                
+        </main>
+
+        <footer class="footer flex flex-col space-y-32 justify-center items-center bg-[#333] p-40 text-2xl">
+            <div class="footer__logo-box">
+                <img src="../img/logo-green-2x.png" alt="" class="w-60 h-auto">
+            </div>
+
+            <ul class="footer__list list-none border-t-[0.5px] border-t-[#928888] pt-8 inline-block">
+                <li class="footer__item"><a href="" class="footer__link">Company</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Career</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
+                <li class="footer__item last:mr-0"><a href="" class="footer__link">Terms</a></li>
+            </ul>
+
+        </footer>
+
+        <div class="popup fixed top-0 left-0 w-screen h-screen bg-[#000000b8] z-50 invisible opacity-0 target:opacity-100 target:visible duration-300 group" id="popup">
+            <div class="popup__content opacity-0 w-3/4 shadow-lg bg-white absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 table rounded-md overflow-hidden scale-50 group-target:duration-200 group-target:opacity-100 group-target:scale-100">
+                <div class="popup__left w-[33.33333%] table-cell ">
+                    <img src="../img/nat-8.jpg" alt="" class="popup__photo">
+                    <img src="../img/nat-9.jpg" alt="" class="popup__photo">
+                </div>
+                <div class="popup__right w-[66.666667%] table-cell align-middle px-16 py-28 ">
+                    <a href="#section-tours" class=" text-[#777] absolute top-10 right-10 inline-block hover:text-color-primary text-6xl duration:200 " id="section-tours">
+                        &times;
+                    </a>
+                    <h2 class="heading-secondary heading-secondary-design mb-10">Start Booking Now</h2>
+                    <h3 class="heading-tertiary font-semibold mb-10 uppercase">Important &ndash; Please read these terms before booking.</h3>
+                    <p class="popup__text text-2xl mb-16">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quod dolorem possimus qui eligendi vero quis deleniti fugiat blanditiis maxime? Commodi deleniti deserunt ullam accusantium fugiat ducimus dolores? Nemo iste ut cupiditate, mollitia culpa id? Veniam hic repellendus doloremque consequuntur quis unde delectus. Nihil nisi, non et commodi voluptates obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequatur natus esse eveniet maiores explicabo temporibus veritatis vitae voluptates culpa reiciendis, quae sint ad deleniti sed doloribus sunt. Illo modi eveniet maxime dolorum fugit aliquam corrupti nemo, harum sunt animi unde sint accusamus, numquam aliquid possimus rem? Labore, sapiente quia.</p>
+                    <a href="#" class="btn relative btn-white bg-color-primary text-white uppercase py-[2rem] px-[4rem] duration-200 hover:shadow-lg shadow-xl btn--ping after:bg-color-primary mx-auto"> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html> 

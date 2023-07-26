@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply inline-block hover:-translate-y-1 active:translate-y-1 rounded-full;
+}
+
+.btn--ping{
+    @apply after:content-[''] after:inline-block after:w-full after:h-full after:-z-10 after:absolute after:top-0 after:left-0 hover:after:scale-y-[1.7] after:bg-white hover:after:scale-x-125 after:rounded-full after:duration-300 hover:after:opacity-0;
+}
+
+.clearfix{
+    @apply after:content-[''] after:clear-both after:table;
+}
+
+.btn--animated{
+    animation: moveInBottom 0.5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+
+.header{
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+}
+
+@keyframes moveInLeft{
+    0% {
+        opacity:0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom{
+    0% {
+        opacity:0;
+        transform: translateY(10rem);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInRight{
+    0% {
+        opacity:0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+.heading--primary{
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
+    /* To prevent shaking: */
+    backface-visibility: hidden;
+}
+
+.bg-gradient{
+    background-image: linear-gradient(to right, #6dc95ca7, #11a070b6);
+}
+
+.heading--sub{
+    animation: moveInRight 1s ease-in;
+    backface-visibility: hidden;
+}
+
+.header-sexy{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
+
+.header-animation{
+    @apply duration-200 hover:skew-y-2 hover:-skew-x-[15deg] hover:scale-110;
+
+}
+
+.header-animation:hover{
+    text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, 0.203);
+}
+
+.heading-secondary-design{
+    @apply uppercase text-6xl font-bold bg-gradient inline-block tracking-wider header-sexy header-animation md:text-[3rem] sm:text-[2.5rem];
+}
+
+.composition__photo{
+    @apply w-[50%] rounded-sm absolute top-60 hover:z-10 duration-100 hover:scale-110 md:float-left md:relative md:w-1/3;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.406);
+    outline-offset: 2rem;
+}
+
+.composition__photo:hover{
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    outline: 1.5rem solid #55c57a;
+    
+}
+
+.features {
+    background-image: linear-gradient(to right bottom, #81e071a7, #26a077b6), url(../img/nat-4.jpg);
+    background-size: cover;
+    background-position: top; }
+
+    .box{
+        @apply bg-white bg-opacity-80 text-[1.5rem] py-20 px-10 text-center rounded-md shadow-xl duration-200 hover:shadow-xl hover:-translate-y-5 hover:scale-105;
+    }
+
+    .box-header{
+        @apply font-bold tracking-wide text-2xl uppercase py-10;
+    }
+
+    .icon{
+        @apply text-[6rem] mb-2 mt-2 bg-clip-text text-transparent bg-gradient-to-tr from-color-primary-light to-color-primary-dark
+    }
+
+    .box-paragraph{
+        @apply leading-[2.3rem];
+    }
+
+    .card{
+        @apply relative h-[60rem] md:w-full;
+        perspective: 150rem;
+        
+    }
+    .card_side--back{
+        transform: rotateY(180deg);
+    }
+    .card_side{
+        @apply h-[55rem] duration-1000 absolute top-0 left-0 w-full rounded-md overflow-hidden;
+        backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    }
+
+    .card:hover .card_side--front{
+        transform: rotateY(-180deg);
+    }
+
+    .card:hover .card_side--back{
+        transform: rotateY(0);
+    }
+
+    .card__pic{
+        @apply bg-cover h-96;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        background-blend-mode: screen;
+    }
+
+    .card__heading{
+        @apply inline-block text-white font-[300] text-[2.8rem] uppercase text-right absolute top-48 right-8 leading-loose w-3/4;
+    }
+
+    .card__heading-span{
+        @apply px-4 py-6;
+    }
+
+    .card-list{
+        @apply text-center py-12;
+    }
+
+    .list-item{
+        @apply inline-block w-[60%] mx-auto py-[1.2rem] px-6 border-b-[1px] text-2xl; 
+    }
+
+    .review-box{
+        @apply bg-white bg-opacity-80 w-[60%] rounded-lg p-24 pl-36 skew-x-[-12deg] ;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    }
+
+    .story__shape{
+        @apply w-60 h-60 relative float-left -translate-x-12 skew-x-[12deg];
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+    }
+
+    .story__caption{
+        @apply absolute top-[50%] left-[50%] -translate-x-[50%] translate-y-[50%] opacity-0 text-white text-[1.7rem] text-center group-hover:opacity-100 group-hover:-translate-y-[50%] duration-500;
+    }
+
+    .story__img{
+        @apply outline-none scale-[1.7] h-full group-hover:scale-100 duration-500;
+    }
+    .review-box:hover .story__img{
+        filter: blur(3px) brightness(80%);
+    }
+
+    .bg__video{
+        @apply absolute top-0 left-0 z-[-1] h-full w-full overflow-hidden;
+    }
+
+    .bg__video-content{
+        @apply w-full h-full object-cover;
+    }
+
+    .booking{
+        @apply p-60 bg-gradient-to-br from-color-primary-light to-color-primary-dark;
+    }
+
+    .book-box{
+        @apply bg-cover w-full rounded-md;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.157);
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+    }
+
+    .book-form{
+        @apply w-1/2 p-20;
+    }
+
+    .form__group{
+        @apply mb-8;
+    }
+
+    .form__input{
+        @apply p-6 px-8 w-[90%] text-2xl font-normal rounded-sm block text-inherit bg-white font-sans focus:outline-none focus:shadow-md border-b-[3px] border-b-transparent focus:border-b-color-primary focus:invalid:border-b-color-secondary-dark placeholder:text-[#999] duration-300;
+    }
+
+    .form__label{
+        @apply text-lg font-bold mx-8 mt-3 block peer-placeholder-shown:opacity-0 peer-placeholder-shown:invisible duration-300 peer-placeholder-shown:-translate-y-[4rem];
+    }
+
+    .form__radio{
+        @apply w-[49%] inline-block md:block md:py-8;
+    }
+
+    .form__radio-label{
+        @apply cursor-pointer relative pl-[4.5rem];
+    }
+
+    .form__radio-button{
+        @apply w-12 h-12 inline-block rounded-full border-4 border-color-primary absolute -top-2 left-0 after:h-6 after:w-6 after:block after:rounded-full after:absolute after:top-[50%] after:left-[50%] after:-translate-x-1/2 after:-translate-y-1/2 after:bg-color-primary after:opacity-0 after:duration-200;
+    }
+
+    .form__radio-input:checked ~ .form__radio-label .form__radio-button:after{
+        opacity: 1;
+    }
+
+    .footer__item{
+        @apply inline-block mr-6 text-[#f7f7f7] uppercase;
+    }
+
+    .footer__link{
+        @apply inline-block hover:text-color-primary active:text-color-primary
+    }
+
+    .popup__photo{
+        @apply block w-full;
+    }
+
+    .popup__text{
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid rgb(236, 232, 232);
+        hyphens:auto;
+    }
+
+    .navigation__link{
+        @apply text-[3rem] font-light text-white uppercase py-12 px-8 hover:text-color-primary active:text-color-primary;
+    }
+
+    .navigation__item{
+        @apply m-8;
+    }
